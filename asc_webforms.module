@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ASC Webforms feature.
+ */
+
+include_once 'asc_webforms.features.inc';
