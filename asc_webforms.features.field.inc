@@ -10,8 +10,8 @@
 function asc_webforms_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-asc_webform-body'.
-  $fields['node-asc_webform-body'] = array(
+  // Exported field: 'node-webform-body'.
+  $fields['node-webform-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -40,7 +40,7 @@ function asc_webforms_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'asc_webform',
+      'bundle' => 'webform',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',

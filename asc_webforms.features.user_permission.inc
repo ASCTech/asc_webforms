@@ -14,9 +14,8 @@ function asc_webforms_user_default_permissions() {
   $permissions['access all webform results'] = array(
     'name' => 'access all webform results',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
-      2 => 'Webform Viewer',
+      0 => 'Form Manager',
+      1 => 'Form Viewer',
     ),
     'module' => 'webform',
   );
@@ -25,9 +24,8 @@ function asc_webforms_user_default_permissions() {
   $permissions['access own webform results'] = array(
     'name' => 'access own webform results',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
-      2 => 'Webform Viewer',
+      0 => 'Form Manager',
+      1 => 'Form Viewer',
     ),
     'module' => 'webform',
   );
@@ -36,17 +34,17 @@ function asc_webforms_user_default_permissions() {
   $permissions['access own webform submissions'] = array(
     'name' => 'access own webform submissions',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
+      0 => 'authenticated user',
     ),
     'module' => 'webform',
   );
 
-  // Exported permission: create asc_webform content.
-  $permissions['create asc_webform content'] = array(
-    'name' => 'create asc_webform content',
+  // Exported permission: create webform content.
+  $permissions['create webform content'] = array(
+    'name' => 'create webform content',
     'roles' => array(
-      0 => 'Webform Manager',
+      0 => 'Content Manager',
+      1 => 'Form Manager',
     ),
     'module' => 'node',
   );
@@ -55,28 +53,27 @@ function asc_webforms_user_default_permissions() {
   $permissions['delete all webform submissions'] = array(
     'name' => 'delete all webform submissions',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
+      0 => 'Form Manager',
     ),
     'module' => 'webform',
   );
 
-  // Exported permission: delete any asc_webform content.
-  $permissions['delete any asc_webform content'] = array(
-    'name' => 'delete any asc_webform content',
+  // Exported permission: delete any webform content.
+  $permissions['delete any webform content'] = array(
+    'name' => 'delete any webform content',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
+      0 => 'Content Manager',
+      1 => 'Form Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: delete own asc_webform content.
-  $permissions['delete own asc_webform content'] = array(
-    'name' => 'delete own asc_webform content',
+  // Exported permission: delete own webform content.
+  $permissions['delete own webform content'] = array(
+    'name' => 'delete own webform content',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
+      0 => 'Content Manager',
+      1 => 'Form Manager',
     ),
     'module' => 'node',
   );
@@ -84,10 +81,7 @@ function asc_webforms_user_default_permissions() {
   // Exported permission: delete own webform submissions.
   $permissions['delete own webform submissions'] = array(
     'name' => 'delete own webform submissions',
-    'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
-    ),
+    'roles' => array(),
     'module' => 'webform',
   );
 
@@ -95,28 +89,27 @@ function asc_webforms_user_default_permissions() {
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
+      0 => 'Form Manager',
     ),
     'module' => 'webform',
   );
 
-  // Exported permission: edit any asc_webform content.
-  $permissions['edit any asc_webform content'] = array(
-    'name' => 'edit any asc_webform content',
+  // Exported permission: edit any webform content.
+  $permissions['edit any webform content'] = array(
+    'name' => 'edit any webform content',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
+      0 => 'Content Manager',
+      1 => 'Form Manager',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: edit own asc_webform content.
-  $permissions['edit own asc_webform content'] = array(
-    'name' => 'edit own asc_webform content',
+  // Exported permission: edit own webform content.
+  $permissions['edit own webform content'] = array(
+    'name' => 'edit own webform content',
     'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
+      0 => 'Content Manager',
+      1 => 'Form Manager',
     ),
     'module' => 'node',
   );
@@ -124,10 +117,7 @@ function asc_webforms_user_default_permissions() {
   // Exported permission: edit own webform submissions.
   $permissions['edit own webform submissions'] = array(
     'name' => 'edit own webform submissions',
-    'roles' => array(
-      0 => 'Site Administrator',
-      1 => 'Webform Manager',
-    ),
+    'roles' => array(),
     'module' => 'webform',
   );
 
