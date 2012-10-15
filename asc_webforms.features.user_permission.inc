@@ -14,8 +14,8 @@ function asc_webforms_user_default_permissions() {
   $permissions['access all webform results'] = array(
     'name' => 'access all webform results',
     'roles' => array(
-      0 => 'Form Manager',
-      1 => 'Form Viewer',
+      0 => 'Webform Manager',
+      1 => 'Webform Viewer',
     ),
     'module' => 'webform',
   );
@@ -24,8 +24,7 @@ function asc_webforms_user_default_permissions() {
   $permissions['access own webform results'] = array(
     'name' => 'access own webform results',
     'roles' => array(
-      0 => 'Form Manager',
-      1 => 'Form Viewer',
+      0 => 'Webform Manager',
     ),
     'module' => 'webform',
   );
@@ -44,7 +43,7 @@ function asc_webforms_user_default_permissions() {
     'name' => 'create webform content',
     'roles' => array(
       0 => 'Content Manager',
-      1 => 'Form Manager',
+      1 => 'Webform Manager',
     ),
     'module' => 'node',
   );
@@ -53,7 +52,7 @@ function asc_webforms_user_default_permissions() {
   $permissions['delete all webform submissions'] = array(
     'name' => 'delete all webform submissions',
     'roles' => array(
-      0 => 'Form Manager',
+      0 => 'Webform Manager',
     ),
     'module' => 'webform',
   );
@@ -63,7 +62,8 @@ function asc_webforms_user_default_permissions() {
     'name' => 'delete any webform content',
     'roles' => array(
       0 => 'Content Manager',
-      1 => 'Form Manager',
+      1 => 'Site Administrator',
+      2 => 'Webform Manager',
     ),
     'module' => 'node',
   );
@@ -73,7 +73,8 @@ function asc_webforms_user_default_permissions() {
     'name' => 'delete own webform content',
     'roles' => array(
       0 => 'Content Manager',
-      1 => 'Form Manager',
+      1 => 'Site Administrator',
+      2 => 'Webform Manager',
     ),
     'module' => 'node',
   );
@@ -81,7 +82,9 @@ function asc_webforms_user_default_permissions() {
   // Exported permission: delete own webform submissions.
   $permissions['delete own webform submissions'] = array(
     'name' => 'delete own webform submissions',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Webform Manager',
+    ),
     'module' => 'webform',
   );
 
@@ -89,7 +92,7 @@ function asc_webforms_user_default_permissions() {
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
     'roles' => array(
-      0 => 'Form Manager',
+      0 => 'Webform Manager',
     ),
     'module' => 'webform',
   );
@@ -99,7 +102,8 @@ function asc_webforms_user_default_permissions() {
     'name' => 'edit any webform content',
     'roles' => array(
       0 => 'Content Manager',
-      1 => 'Form Manager',
+      1 => 'Site Administrator',
+      2 => 'Webform Manager',
     ),
     'module' => 'node',
   );
@@ -109,7 +113,8 @@ function asc_webforms_user_default_permissions() {
     'name' => 'edit own webform content',
     'roles' => array(
       0 => 'Content Manager',
-      1 => 'Form Manager',
+      1 => 'Site Administrator',
+      2 => 'Webform Manager',
     ),
     'module' => 'node',
   );
@@ -117,7 +122,9 @@ function asc_webforms_user_default_permissions() {
   // Exported permission: edit own webform submissions.
   $permissions['edit own webform submissions'] = array(
     'name' => 'edit own webform submissions',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Webform Manager',
+    ),
     'module' => 'webform',
   );
 
