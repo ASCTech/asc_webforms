@@ -13,6 +13,7 @@ dependencies[] = form_builder
 dependencies[] = form_builder_webform
 dependencies[] = strongarm
 dependencies[] = webform
+dependencies[] = webform_submissions_acl
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[field][] = node-webform-body
