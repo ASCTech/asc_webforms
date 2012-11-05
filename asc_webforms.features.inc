@@ -32,6 +32,7 @@ function asc_webforms_breadcrumbs_config_features_default_setting() {
     ),
   );
   return $custom_breadcrumbs_configs;
+}
 
 /**
  * Implements hook_node_info().
