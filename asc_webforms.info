@@ -7,7 +7,6 @@ version = 7.x-1.0
 project = asc_webforms
 dependencies[] = acl
 dependencies[] = asc_auth
-dependencies[] = content_access
 dependencies[] = features
 dependencies[] = form_builder
 dependencies[] = form_builder_webform
