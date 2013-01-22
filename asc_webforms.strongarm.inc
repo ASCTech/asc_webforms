@@ -29,13 +29,6 @@ function asc_webforms_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_submission_access_control';
-  $strongarm->value = '0';
-  $export['webform_submission_access_control'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_webform';
   $strongarm->value = array(
     0 => 'status',
@@ -53,7 +46,7 @@ function asc_webforms_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_webform';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_webform'] = $strongarm;
 
   $strongarm = new stdClass();

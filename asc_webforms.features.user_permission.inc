@@ -43,7 +43,8 @@ function asc_webforms_user_default_permissions() {
     'name' => 'create webform content',
     'roles' => array(
       0 => 'Content Manager',
-      1 => 'Webform Manager',
+      1 => 'Site Administrator',
+      2 => 'Webform Manager',
     ),
     'module' => 'node',
   );

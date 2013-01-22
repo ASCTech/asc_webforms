@@ -15,26 +15,6 @@ function asc_webforms_ctools_plugin_api() {
 }
 
 /**
- * Implements hook_custom_breadcrumbs_config_features_default_settings().
- */
-function asc_webforms_breadcrumbs_config_features_default_setting() {
-  $custom_breadcrumbs_configs = array();
-
-  $custom_breadcrumbs_configs[] = array(
-    'asc_webforms-1689872192' => array(
-      'name' => 'Webform',
-      'machine_name' => 'asc_webform-1689872192',
-      'titles' => '[node:title]',
-      'paths' => '[node:url:path]',
-      'visibility_php' => '',
-      'node_type' => 'webform',
-      'language' => '',
-    ),
-  );
-  return $custom_breadcrumbs_configs;
-}
-
-/**
  * Implements hook_node_info().
  */
 function asc_webforms_node_info() {
